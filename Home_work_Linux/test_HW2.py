@@ -13,6 +13,7 @@ from sem import checkout
 folderin = "/home/user/tst"
 folderout = "/home/user/out"
 folderext = "/home/user/folder1"
+folderext2 = "/home/user/folder2"
 
 
 def test_step8():
@@ -22,7 +23,7 @@ def test_step8():
 
 def test_step9():
     # test9
-    assert checkout(f"cd {folderout}; 7z x arx2.7z -o{folderext} -y", "Everything is Ok"), "test9 FAIL"
+    assert checkout(f"cd {folderout}; 7z x arx2.7z -o{folderext2} -y", "Everything is Ok"), "test9 FAIL"
 
 
 def test_step10():
